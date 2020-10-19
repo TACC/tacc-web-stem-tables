@@ -1,6 +1,6 @@
 # TACC Website STEM Tables
 
-This project compiles data into templates to create __some__ markup for the body of the [REU Alumni Page][reu-alumni].
+This project compiles data into templates to create __some__ markup (only list items) for the body of the [REU Alumni Page][reu-alumni].
 
 [reu-alumni]: https://www.tacc.utexas.edu/reu/alumni "TACC: REU: Alumni Page(s)"
 
@@ -16,3 +16,7 @@ This project compiles data into templates to create __some__ markup for the body
 4. Confirm output in:
     - `dist/`
 5. Use output.
+
+## Reference
+
+- [How To - Legacy TACC - Markup Generation Utility](https://confluence.tacc.utexas.edu/x/AYGDC)
