@@ -1,0 +1,12 @@
+{{#entries}}
+	{{#is_separator}}
+
+
+	<!--{{year}}-->
+
+
+{{/is_separator}}{{^is_separator}}{{#should_hide}}	<!--<li>{{> reu-alumni-row}}</li>-->{{/should_hide}}{{^should_hide}}	<li>
+	{{> reu-alumni-row}}</li>
+		{{/should_hide}}
+	{{/is_separator}}
+{{/entries}}
