@@ -1,6 +1,9 @@
 # TACC Website STEM Tables
 
-This project compiles data into templates to create __some__ markup (only list items) for the body of the [REU Alumni Page][reu-alumni].
+This project compiles data into templates to create __some__ markup for the body of the [REU Alumni Page][reu-alumni]:
+
+- list items
+- styles
 
 [reu-alumni]: https://www.tacc.utexas.edu/reu/alumni "TACC: REU: Alumni Page(s)"
 

@@ -34,6 +34,7 @@ scripts:
     cp ./assets/_reu-alumni.json ./assets/_data.json &&
     mustache
     -p ./templates/partials/reu-alumni-row.mustache
+    -p ./templates/partials/reu-alumni-styles.mustache
     ./bin/manipulate-json.js ./templates/reu-alumni.mustache >
     ./dist/reu-alumni.html
 
