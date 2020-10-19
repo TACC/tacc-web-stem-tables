@@ -1,8 +1,8 @@
-# TACC Website EPIC Tables
+# TACC Website STEM Tables
 
-This project compiles data into templates to create markup for the body of the [EPIC Presenetations & Publications Page][epic-prespub].
+This project compiles data into templates to create __some__ markup for the body of the [REU Alumni Page][reu-alumni].
 
-[epic-prespub]: https://www.tacc.utexas.edu/epic/research/presentations-and-publications "TACC: EPIC: Research: Presenetations & Publications Page"
+[reu-alumni]: https://www.tacc.utexas.edu/reu/alumni "TACC: REU: Alumni Page(s)"
 
 ## Usage
 
