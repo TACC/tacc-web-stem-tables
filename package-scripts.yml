@@ -30,13 +30,42 @@ scripts:
     # Apply data into template, then ouput to… (`….json ….mustache >`)
     # Final markup file (`….html`)
   build:markup: nps build:markup:reu-alumni
-  build:markup:reu-alumni: >-
+  build:markup:reu-alumni: nps build:markup:reu-alumni:2014 build:markup:reu-alumni:2015 build:markup:reu-alumni:2016 build:markup:reu-alumni:2019 build:markup:reu-alumni:2020
+  build:markup:reu-alumni:2014: >-
     cp ./assets/_reu-alumni.json ./assets/_data.json &&
     mustache
     -p ./templates/partials/reu-alumni-row.mustache
     -p ./templates/partials/reu-alumni-styles.mustache
-    ./bin/manipulate-json.js ./templates/reu-alumni.mustache >
-    ./dist/reu-alumni.html
+    ./bin/manipulate-json.js ./templates/reu-alumni-2014.mustache >
+    ./dist/reu-alumni-2014.html
+  build:markup:reu-alumni:2015: >-
+    cp ./assets/_reu-alumni.json ./assets/_data.json &&
+    mustache
+    -p ./templates/partials/reu-alumni-row.mustache
+    -p ./templates/partials/reu-alumni-styles.mustache
+    ./bin/manipulate-json.js ./templates/reu-alumni-2015.mustache >
+    ./dist/reu-alumni-2015.html
+  build:markup:reu-alumni:2016: >-
+    cp ./assets/_reu-alumni.json ./assets/_data.json &&
+    mustache
+    -p ./templates/partials/reu-alumni-row.mustache
+    -p ./templates/partials/reu-alumni-styles.mustache
+    ./bin/manipulate-json.js ./templates/reu-alumni-2016.mustache >
+    ./dist/reu-alumni-2016.html
+  build:markup:reu-alumni:2019: >-
+    cp ./assets/_reu-alumni.json ./assets/_data.json &&
+    mustache
+    -p ./templates/partials/reu-alumni-row.mustache
+    -p ./templates/partials/reu-alumni-styles.mustache
+    ./bin/manipulate-json.js ./templates/reu-alumni-2019.mustache >
+    ./dist/reu-alumni-2019.html
+  build:markup:reu-alumni:2020: >-
+    cp ./assets/_reu-alumni.json ./assets/_data.json &&
+    mustache
+    -p ./templates/partials/reu-alumni-row.mustache
+    -p ./templates/partials/reu-alumni-styles.mustache
+    ./bin/manipulate-json.js ./templates/reu-alumni-2020.mustache >
+    ./dist/reu-alumni-2020.html
 
   report: echo "Copy relevant markup from './dist/___.html"
 

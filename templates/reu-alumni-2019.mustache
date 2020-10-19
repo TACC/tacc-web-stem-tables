@@ -1,0 +1,18 @@
+{{> reu-alumni-styles}}
+<section class="reu-alumni-list">
+	<h3>
+		REU Alumni</h3>
+	<h4>
+		2019 Cohort</h4>
+	<p>
+		<img class="img-responsive" src="/documents/1084364/1535368/reu-alumni-2019.jpg" /></p>
+	<p>
+		<strong>STUDENT PRESENTATIONS</strong></p>
+	<ul>
+{{#entries}}{{#is_2019}}
+{{#should_hide}}	<!--<li>{{> reu-alumni-row}}</li>-->{{/should_hide}}{{^should_hide}}	<li>
+	{{> reu-alumni-row}}</li>
+		{{/should_hide}}
+{{/is_2019}}{{/entries}}
+	</ul>
+</section>

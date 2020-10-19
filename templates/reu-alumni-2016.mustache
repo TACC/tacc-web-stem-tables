@@ -1,0 +1,18 @@
+{{> reu-alumni-styles}}
+<section class="reu-alumni-list">
+	<h3>
+		REU Alumni</h3>
+	<h4>
+		2016 Cohort</h4>
+	<p>
+		<img class="img-responsive" src="/documents/1084364/1535368/reu-alumni-2016.jpg" /><!--<br /><i>Left to Right: (Back row) Fatima Al-Quaiti, St. Mary's University; Joshua Matos Gonzalez, University of Puerto Rico, Mayagüez Campus; Tiffany Connors, Texas State University; Keith Waggoner, University of Alabama; Joseph Molina, California State University, Monterey Bay; Marvis Cruz Fuentes, University of Florida; Grace Rodríguez Gómez, University of Puerto Rico, Río Piedras Campus; James Pippin, Fort Valley State University; (front row): Linda Moise, Virgina Union University. Not featured: Zeerak Abbas, The University of Texas at Austin</i></p>--></p>
+	<p>
+		<strong>STUDENT WEBSITES</strong></p>
+	<ul>
+{{#entries}}{{#is_2016}}
+{{#should_hide}}	<!--<li>{{> reu-alumni-row}}</li>-->{{/should_hide}}{{^should_hide}}	<li>
+	{{> reu-alumni-row}}</li>
+		{{/should_hide}}
+{{/is_2016}}{{/entries}}
+	</ul>
+</section>

@@ -16,6 +16,7 @@ function wrap(data) {
 function format(data) {
   data['entries'].forEach( entry => {
     entry.project_name = formatProjectName(entry.project_name);
+    entry[getYearBoolKeyName(entry)] = true;
   });
 
   return data;
@@ -35,34 +36,14 @@ function formatProjectName(name) {
   return shouldClear ? '' : name;
 }
 
-/** Insert separator rows */
-function insert(data) {
-  const newData = { entries: [] };
-  let previousYear;
-  let isNewYear;
-
-  data['entries'].forEach( entry => {
-    const separatorEntry = {
-      is_separator: true,
-      year: entry.year
-    };
-
-    isNewYear = (entry.year !== previousYear);
-    previousYear = entry.year;
-
-    if (isNewYear) {
-      newData['entries'].push( separatorEntry );
-    }
-    newData['entries'].push( entry );
-  });
-
-  return newData;
+/** Build the key name for boolean version of year property */
+function getYearBoolKeyName(entry) {
+  return `is_${entry.year}`;
 }
 
 // Manipulate data
 data = wrap(data);
 data = format(data);
-data = insert(data);
 // console.log(data);
 
 module.exports = data;
